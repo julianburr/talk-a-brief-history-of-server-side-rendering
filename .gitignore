@@ -1,0 +1,7 @@
+.DS_Store
+
+# Dependencies
+node_modules
+
+# Typescript
+tsconfig.tsbuildinfo

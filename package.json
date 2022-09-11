@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "talk-react-server-side-rendering",
+  "author": "hello@julianburr.de",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "slides",
+      "examples/**"
+    ]
+  }
+}
