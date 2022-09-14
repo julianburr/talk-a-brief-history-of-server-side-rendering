@@ -163,7 +163,7 @@ const titles = [
     right: "The magic of jQuery",
   },
   {
-    middle: "How to recover mentally from Angular 1",
+    middle: "How to mentally recover from Angular 1",
     right: "React for dummies",
   },
 ];
