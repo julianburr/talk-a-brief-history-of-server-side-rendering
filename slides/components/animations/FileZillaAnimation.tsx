@@ -55,7 +55,7 @@ const Line = styled("div", {
   position: "relative",
   background: "$grey",
   borderRadius: ".2vh",
-  transition: "all 1s",
+  transition: "all .6s",
   transitionDelay: "$$lineDelay",
 
   variants: {
@@ -133,11 +133,11 @@ function FileZillaAnimation({ part }: FileZillaAnimationProps) {
           <Line visible={part === 2} css={{ $$lineWidth: "35%" }} />
           <Line
             visible={part === 2}
-            css={{ $$lineWidth: "80%", $$lineDelay: ".8s" }}
+            css={{ $$lineWidth: "80%", $$lineDelay: ".6s" }}
           />
           <Line
             visible={part === 2}
-            css={{ $$lineWidth: "30%", $$lineDelay: "1.6s" }}
+            css={{ $$lineWidth: "30%", $$lineDelay: "1.2s" }}
           />
         </WindowContent>
       </NotepadWindow>

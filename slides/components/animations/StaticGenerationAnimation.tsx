@@ -76,7 +76,7 @@ const Line = styled("div", {
   position: "relative",
   background: "$grey",
   borderRadius: ".2vh",
-  transition: "all 1s",
+  transition: "all .6s",
   transitionDelay: "$$lineDelay",
 
   variants: {
@@ -131,11 +131,11 @@ function StaticGenerationAnimation({ part }: StaticGenerationAnimationProps) {
           <Line visible={part >= 2} css={{ $$lineWidth: "40%" }} />
           <Line
             visible={part >= 2}
-            css={{ $$lineWidth: "80%", $$lineDelay: ".8s" }}
+            css={{ $$lineWidth: "80%", $$lineDelay: ".6s" }}
           />
           <Line
             visible={part >= 2}
-            css={{ $$lineWidth: "45%", $$lineDelay: "1.6s" }}
+            css={{ $$lineWidth: "45%", $$lineDelay: "1.2s" }}
           />
         </WindowContent>
       </NotepadWindow>
@@ -147,11 +147,11 @@ function StaticGenerationAnimation({ part }: StaticGenerationAnimationProps) {
           <Line visible={part === 4} css={{ $$lineWidth: "40%" }} />
           <Line
             visible={part === 4}
-            css={{ $$lineWidth: "80%", $$lineDelay: ".8s" }}
+            css={{ $$lineWidth: "80%", $$lineDelay: ".6s" }}
           />
           <Line
             visible={part === 4}
-            css={{ $$lineWidth: "45%", $$lineDelay: "1.6s" }}
+            css={{ $$lineWidth: "45%", $$lineDelay: "1.2s" }}
           />
         </WindowContent>
       </TerminalWindow>
