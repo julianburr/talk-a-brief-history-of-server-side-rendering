@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "sideEffects": false,
   "scripts": {
-    "dev": "PORT=3050 remix build && run-p \"dev:*\"",
-    "dev:node": "cross-env NODE_ENV=development nodemon ./server.js --watch ./server.js",
+    "dev": "remix build && run-p \"dev:*\"",
+    "dev:node": "cross-env PORT=3150 NODE_ENV=development nodemon ./server.js --watch ./server.js",
     "dev:remix": "remix watch",
     "build": "remix build",
-    "start": "PORT=3050 cross-env NODE_ENV=production node ./server.js"
+    "start": "cross-env NODE_ENV=production node ./server.js"
   },
   "dependencies": {
     "@remix-run/express": "^1.7.0",

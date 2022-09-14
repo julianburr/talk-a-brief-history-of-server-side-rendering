@@ -8,5 +8,20 @@
       "slides",
       "examples/**"
     ]
+  },
+  "scripts": {
+    "dev": "stmux -e ERROR -m beep,system -- [ [ \"yarn dev:crs:cra\" .. \"yarn dev:ssg:gatsby\" ] : [ \"yarn dev:ssg:next\" .. \"yarn dev:ssr:next\" ] : [ \"yarn dev:ssr:remix\" ] ]",
+    "open": "opener http://localhost:3110 && opener http://localhost:3120 && opener http://localhost:3130 && opener http://localhost:3140 && opener http://localhost:3150",
+    "dev:slides": "yarn --cwd=./slides dev",
+    "dev:crs:cra": "yarn --cwd=./examples/create-react-app-csr dev",
+    "dev:ssg:gatsby": "yarn --cwd=./examples/gatsby-ssg dev",
+    "dev:ssg:next": "yarn --cwd=./examples/nextjs-ssg dev",
+    "dev:ssr:next": "yarn --cwd=./examples/nextjs-ssr dev",
+    "dev:ssr:remix": "yarn --cwd=./examples/remix-ssr dev"
+  },
+  "devDependencies": {
+    "opener": "^1.5.2",
+    "run-p": "^0.0.0",
+    "stmux": "^1.8.4"
   }
 }

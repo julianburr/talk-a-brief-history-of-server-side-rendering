@@ -2,7 +2,7 @@
   "name": "create-react-app-csr",
   "version": "0.0.0",
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "BROWSER=none PORT=3110 react-scripts start",
     "build": "react-scripts build"
   },
   "dependencies": {

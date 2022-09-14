@@ -9,7 +9,7 @@ const serverComponentsUserExperience = [
   />,
   <UserExperienceAnimation
     browserName="Chrome"
-    target="client"
+    target="server"
     label="Request page"
   />,
   <UserExperienceAnimation

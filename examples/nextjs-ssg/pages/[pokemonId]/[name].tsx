@@ -25,6 +25,17 @@ function DetailsPage({ pokemonData }: DetailsPageProps) {
   );
 }
 
+async function getStaticProps(context: GetStaticPropsContext) {
+  try {
+    const pokemonId = context.params?.pokemonId;
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`;
+    const res = await fetch(url).then((res) => res.json());
+    return { props: { pokemonData: res } };
+  } catch (e) {
+    return { props: {} };
+  }
+}
+
 async function getStaticPaths() {
   try {
     const url = "https://pokeapi.co/api/v2/pokemon?limit=151";
@@ -38,17 +49,6 @@ async function getStaticPaths() {
     };
   } catch (e) {
     return { paths: [], fallback: false };
-  }
-}
-
-async function getStaticProps(context: GetStaticPropsContext) {
-  try {
-    const pokemonId = context.params?.pokemonId;
-    const url = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`;
-    const res = await fetch(url).then((res) => res.json());
-    return { props: { pokemonData: res } };
-  } catch (e) {
-    return { props: {} };
   }
 }
 
