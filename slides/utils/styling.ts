@@ -1,5 +1,5 @@
 import * as Stitches from "@stitches/react";
-console.log({ Stitches });
+
 const {
   styled,
   css,

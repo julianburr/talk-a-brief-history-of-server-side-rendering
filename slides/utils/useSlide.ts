@@ -26,7 +26,6 @@ function useSlide() {
   );
 
   const evolution = slideCounts.findIndex((nmb) => slide <= nmb);
-  console.log({ evolution, slide });
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -34,6 +33,12 @@ function useSlide() {
         setSlide(slide - 1);
       } else if (e.key === "ArrowRight" || e.key === " ") {
         setSlide(slide + 1);
+      } else if (e.key === "b") {
+        if (window.document.fullscreenElement) {
+          window.document.exitFullscreen();
+        } else {
+          window.document.body.requestFullscreen();
+        }
       }
     };
 

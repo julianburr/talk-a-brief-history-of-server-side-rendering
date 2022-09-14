@@ -1,4 +1,5 @@
 import { Computer } from "~/components/computer";
+import { Books } from "~/components/objects/Books";
 import { Coffee } from "~/components/objects/Coffee";
 import { Plant } from "~/components/objects/Plant";
 import { TitleSlide } from "~/components/Title";
@@ -40,6 +41,8 @@ function MyApp() {
     <Container>
       <Desk />
       <TitleSlide slide={slide} />
+
+      <Books evolution={evolution} />
       <Computer slide={slide} evolution={evolution} />
 
       <Plant slide={slide} evolution={evolution} />
