@@ -14,7 +14,7 @@ const staticHtmlUserExperience = [
     target="client"
     clientState="empty"
     responseTypes={["html", "css", "jpg"]}
-    label="Return html & assets"
+    label="Return html & styles"
   />,
   <UserExperienceAnimation
     browserName="Internet Explorer"

@@ -19,7 +19,7 @@ const dynamicHtmlUserExperience = [
     browserName="Internet Explorer"
     target="client"
     clientState="empty"
-    responseTypes={["html", "css"]}
+    responseTypes={["html", "css", "jpg"]}
     label="Return html & styles"
   />,
   <UserExperienceAnimation
